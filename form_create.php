@@ -9,7 +9,7 @@
 
 <h1> Create Product </h1>
 <input  type="text" name="name" placeholder="name"/>
-<input  type="textarea" name="description" placeholder="description"/>
+<input  type="text" name="description" placeholder="description"/>
 <input  type="text" name="price" placeholder="price"/>
 <select name="category">
 <option value="">--Category--</option>
