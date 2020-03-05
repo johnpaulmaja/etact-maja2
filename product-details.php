@@ -16,6 +16,8 @@ $value = $list;
         <th>Description</th>
         <th>Price</th>
         <th>Category ID</th>
+        <th></th>
+        <th></th>
     </tr>
 
     <tr>

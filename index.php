@@ -5,8 +5,13 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
     <head>
       <title>Endterm Activity #1</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Fira+Sans|Mukta&display=swap" rel="stylesheet">
     </head>
     <body>
+      <div class="header">
+        <img src="images/logo.png" style="width:300px;height:200px;">
+      </div>
+
       <div class="navbar">
         <a href="index.php?navigation=product">Products</a>
         <a href="index.php?navigation=categories">Category</a>
@@ -36,7 +41,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
       </div>
 
       <div class="footer">
-        <h2>Footer</h2>
+        <h1>Maja | API</h2>
       </div>
     </body>
 </html>

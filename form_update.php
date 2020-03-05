@@ -24,8 +24,10 @@
 		<?php
 		}
 		?>
-		</select>
+		</select><br>
 	<input type="submit" name="submit" value="submit"/>
+
+	
 
 </form>
 

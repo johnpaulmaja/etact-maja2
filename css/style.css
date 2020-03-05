@@ -8,14 +8,20 @@
     margin: 0;
     width: 50%;
     margin: auto;
+    background-color: #c4e9ff;
   }
-  
+
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+
   /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #6f9ad4;
     position: sticky;
-    position: -webkit-sticky;
+    text-align: center;
     top: 0;
   }
   
@@ -53,8 +59,9 @@
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background-color: #6f9ad4;
     margin-top: 20px;
+    color: white;
   }
   
   
@@ -69,17 +76,22 @@
   table {
     border-collapse: collapse;
     width: 100%;
+    background-color: #ddffff;
   }
   
   th, td {
     text-align: left;
     padding: 8px;
+    font-family: 'Mukta', sans-serif;
+    border-bottom: 1px solid #c4e9ff;
   }
   
-  tr:nth-child(even){background-color: #f2f2f2}
+  tr{
+    font-family: 'Fira Sans', sans-serif;
+  }
   
   th {
-    background-color: #4CAF50;
+    background-color: #003366;
     color: white;
   }
 
@@ -113,7 +125,7 @@ margin: 0 auto;
 	position: relative;
 	right: -23%;
 	top: -25%;
-	 margin: 0 auto;
+	margin: 0 auto;
   background: transparent;
   border: 0px;
   padding: 12px;
@@ -122,17 +134,53 @@ margin: 0 auto;
 }
 
 .send{
-	    background: #000;
-    text-align: center;
-    padding: 10px;
-    border-radius: 50px;
-    color: #f1f1f1;
-    cursor: pointer;
-text-transform: uppercase;
-	 position: absolute;
-	 margin-left: -18%;
-	 margin-top: 60px;
+	background: #000;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  color: #f1f1f1;
+  cursor: pointer;
+  text-transform: uppercase;
+	position: absolute;
+	margin-left: -18%;
+	margin-top: 60px;
 }
 .send:hover {
   background-color: grey;
+}
+
+h1{
+  font-family: 'Baloo Chettan', cursive;
+  color: white;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 30%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 45%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.category{
+  text-align: center;
 }
