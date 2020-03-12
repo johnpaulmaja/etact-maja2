@@ -36,7 +36,7 @@ if(!isset($_SESSION['access_token'])){
 ?>
 <html> 
     <head>
-      <title>Endterm Activity #1</title>
+      <title>Endterm Exam by Maja</title>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Fira+Sans|Mukta&display=swap" rel="stylesheet">
