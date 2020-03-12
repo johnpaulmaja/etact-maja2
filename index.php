@@ -1,5 +1,11 @@
 <?php 
 $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET['navigation']: '';
+include 'class.users.php';
+
+$user = new Users();
+if(!$user->get_session()){
+	header("location: login.php");
+}
 ?>
 <html> 
     <head>
