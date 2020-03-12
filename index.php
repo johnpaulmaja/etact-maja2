@@ -1,11 +1,48 @@
 <?php 
 $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET['navigation']: '';
+
+include('config.php');
+
+$login_button = '';
+
+if(isset($_GET["code"])){
+ $token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
+ if(!isset($token['error'])){
+  $google_client->setAccessToken($token['access_token']);
+  $_SESSION['access_token'] = $token['access_token'];
+  $google_service = new Google_Service_Oauth2($google_client);
+  $data = $google_service->userinfo->get();
+  if(!empty($data['given_name'])){
+   $_SESSION['user_first_name'] = $data['given_name'];
+  }
+  if(!empty($data['family_name'])){
+   $_SESSION['user_last_name'] = $data['family_name'];
+  }
+  if(!empty($data['email'])){
+   $_SESSION['user_email_address'] = $data['email'];
+  }
+  if(!empty($data['gender'])){
+   $_SESSION['user_gender'] = $data['gender'];
+  }
+  if(!empty($data['picture'])){
+   $_SESSION['user_image'] = $data['picture'];
+  }
+ }
+}
+if(!isset($_SESSION['access_token'])){
+ $login_button = '<br><a href="'.$google_client->createAuthUrl().'"><img style="" src="images/google.png" /></a>';
+}
+
 ?>
 <html> 
     <head>
       <title>Endterm Activity #1</title>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Fira+Sans|Mukta&display=swap" rel="stylesheet">
+      <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      
     </head>
     <body>
       <div class="header">
@@ -18,28 +55,35 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
         <a href="index.php?navigation=create">Create</a>
       </div>
 
-      <div>         
-      <?php 
-        switch($navigation){
-          case 'product':
-            require_once 'product.php';
-            break;
-          case 'categories':
-            require_once 'categories.php';
-            break;
-          case 'create':
-            require_once 'form_create.php';
-            break;
-          case 'details':
-            require_once 'product-details.php';
-            break;
-		  case 'update':
-            require_once 'form_update.php';
-            break;
+        <div class="panel panel-default">
+        <?php
+        if($login_button == '')
+        {
+          switch($navigation){
+            case 'product':
+              require_once 'product.php';
+              break;
+            case 'categories':
+              require_once 'categories.php';
+              break;
+            case 'create':
+              require_once 'form_create.php';
+              break;
+            case 'details':
+              require_once 'product-details.php';
+              break;
+            case 'update':
+              require_once 'form_update.php';
+              break;
+          }
+          echo '<h3><a href="logout.php">Logout</a></h3>';
         }
-    ?>
-      </div>
-
+        else
+        {
+          echo '<div align="center">'.$login_button . '</div>';
+        }
+        ?>
+        </div>
       <div class="footer">
         <h1>Maja | API</h2>
       </div>

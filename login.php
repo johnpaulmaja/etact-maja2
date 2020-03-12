@@ -1,5 +1,4 @@
 <?php
-
 ?>
 
 <!DOCTYPE html>
@@ -8,12 +7,11 @@
 	<title>Welcome</title>
 	<link rel="stylesheet" type="text/css" href="css/styleAdmin.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="google-signin-client_id" content="539246690236-tvoad6op2k24t4010o2re4nd9v2kjq1n.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="947482041440-33e8qh9nlu3vemrq1brcp9jdbb1a582v.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
 <body>
-<form class="modal-content animate" method="POST" action="" name="login">
 <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
 <button onclick="signOut()">Sign out</button>
     <script>
@@ -38,7 +36,6 @@
   })
 }
 	</script>
-</form>
 
 </body>
 </html>
