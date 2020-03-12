@@ -8,7 +8,7 @@
 	<title>Welcome</title>
 	<link rel="stylesheet" type="text/css" href="css/styleAdmin.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="google-signin-client_id" content="947482041440-7dhf210d4orrfmlh7a4oekj3s98q0o4l.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="539246690236-tvoad6op2k24t4010o2re4nd9v2kjq1n.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
