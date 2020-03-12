@@ -36,17 +36,18 @@ if(!isset($_SESSION['access_token'])){
 ?>
 <html> 
     <head>
-      <title>Endterm Exam by Maja</title>
+      <title>Endterm Activity #1</title>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Fira+Sans|Mukta&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
       <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       
     </head>
     <body>
       <div class="header">
-        <img src="images/logo.png" style="width:300px;height:200px;">
+      <a href="index.php"><img src="images/logo.png" style="width:300px;height:200px;"></a>
       </div>
 
       <div class="navbar">
@@ -75,8 +76,10 @@ if(!isset($_SESSION['access_token'])){
             case 'update':
               require_once 'form_update.php';
               break;
+            default:
+              require_once 'home.php';
+              break;
           }
-          echo '<h3><a href="logout.php">Logout</a></h3>';
         }
         else
         {
