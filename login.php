@@ -1,17 +1,5 @@
 <?php
-include 'class.users.php';
 
-$user = new Users();
-if($user->get_session()){
-	header("location: index.php");
-}
-
-if(isset($_REQUEST['login'])){
-	extract($_REQUEST);
-	header("location: index.php");
-}else{
-	echo '<span style="color:#000;text-align:center;">Wrong Email and Password!</span>';
-}
 ?>
 
 <!DOCTYPE html>
