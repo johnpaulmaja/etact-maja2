@@ -51,6 +51,7 @@ if(!isset($_SESSION['access_token'])){
       </div>
 
       <div class="navbar">
+        <a href="index.php">Home</a>
         <a href="index.php?navigation=product">Products</a>
         <a href="index.php?navigation=categories">Category</a>
         <a href="index.php?navigation=create">Create</a>
