@@ -20,7 +20,7 @@ if(isset($_REQUEST['login'])){
 	<title>Welcome</title>
 	<link rel="stylesheet" type="text/css" href="css/styleAdmin.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="google-signin-client_id" content="539246690236-1s6quu7fvnj56tnifpl3ccmo23gf25jb.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="947482041440-7dhf210d4orrfmlh7a4oekj3s98q0o4l.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 
