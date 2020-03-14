@@ -55,8 +55,6 @@ if(!isset($_SESSION['access_token'])){
         <a href="index.php?navigation=product">Products</a>
         <a href="index.php?navigation=categories">Category</a>
         <a href="index.php?navigation=create">Create</a>
-        <a href="index.php?navigation=technology">Technology News</a>
-        <a href="index.php?navigation=business">Business News</a>
       </div>
 
         <div class="panel panel-default">
@@ -78,12 +76,6 @@ if(!isset($_SESSION['access_token'])){
               break;
             case 'update':
               require_once 'form_update.php';
-              break;
-            case 'technology':
-              require_once 'technology.php';
-              break;
-            case 'business':
-              require_once 'business.php';
               break;
             default:
               require_once 'home.php';
