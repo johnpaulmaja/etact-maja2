@@ -36,7 +36,7 @@ if(!isset($_SESSION['access_token'])){
 
 
 
-$facebook_output = ;
+$facebook_output = '1';
 $facebook_helper = $facebook->getRedirectLoginHelper();
 
 if(isset($_GET['code'])){
@@ -48,10 +48,10 @@ if(isset($_GET['code'])){
   $facebook->setDefaultAccessToken($_SESSION['access_token']);
  }
 
- $_SESSION['user_id'] = ;
- $_SESSION['user_name'] = ;
- $_SESSION['user_email_address'] = ;
- $_SESSION['user_image'] = ;
+ $_SESSION['user_id'] = '1';
+ $_SESSION['user_name'] = '1';
+ $_SESSION['user_email_address'] = '1';
+ $_SESSION['user_image'] = '1';
 
  $graph_response = $facebook->get("/me?fields=name,email", $access_token1);
  $facebook_user_info = $graph_response->getGraphUser();
