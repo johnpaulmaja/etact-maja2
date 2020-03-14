@@ -158,10 +158,7 @@ else
     if(isset($facebook_login_url))
     {
      echo $facebook_login_url;
-    }
-    else
-    {
-      switch($navigation){
+     switch($navigation){
         case 'product':
           require_once 'product.php';
           break;
@@ -180,6 +177,10 @@ else
         default:
           require_once 'home.php';
           break;
+    }
+    else
+    {
+      
       }
     }
     ?>
