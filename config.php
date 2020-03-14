@@ -21,6 +21,13 @@ $google_client->setRedirectUri('https://maja-etact.herokuapp.com/index.php');
 $google_client->addScope('email');
 
 $google_client->addScope('profile');
+//fb
+$facebook = new \Facebook\Facebook([
+  'app_id'      => '921130358246916',
+  'app_secret'     => '8d382dc63a190925664594ef090b8a78',
+  'default_graph_version'  => 'v2.10'
+]);
+
 
 //start session on web page
 session_start()
