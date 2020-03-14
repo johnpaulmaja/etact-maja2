@@ -35,7 +35,7 @@ if(!isset($_SESSION['access_token'])){
 
 ?>
 <html> 
-    <head>
+    <head> <!-- credits: john paul maja :D <3 -->
       <title>Endterm Exam</title>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -45,7 +45,7 @@ if(!isset($_SESSION['access_token'])){
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       
     </head>
-    <body>
+    <body> <!-- credits: john paul maja :D <3 -->
       <div class="header">
       <a href="index.php"><img src="images/logo.png" style="width:300px;height:200px;"></a>
       </div>
@@ -58,7 +58,7 @@ if(!isset($_SESSION['access_token'])){
       </div>
 
         <div class="panel panel-default">
-        <?php
+        <?php //<!-- credits: john paul maja :D <3 -->
         if($login_button == '')
         {
           switch($navigation){
@@ -89,9 +89,9 @@ if(!isset($_SESSION['access_token'])){
         ?>
         </div>
       <div class="footer">
-        <h1>Maja | API</h2>
+        <h1>Maja | API</h2> <!-- credits: john paul maja :D <3 -->
       </div>
-    </body>
+    </body><!-- credits: john paul maja :D <3 -->
 </html>
 
 
