@@ -12,7 +12,7 @@
   <h1>Profile Picture</h1><!-- credits: john paul maja :D <3 -->
   </div><!-- credits: john paul maja :D <3 -->
 </div>
-<h1>Name: <?php echo $_SESSION['user_first_name'] ?> <?php echo $_SESSION['user_last_name'] ?></h1>
+<h1>Name: <?php echo $_SESSION['user_first_name'] ?> <?php echo $_SESSION['user_last_name'] ?> <?php echo $_SESSION['user_name'] ?></h1>
 <h1>Email: <?php echo $_SESSION['user_email_address'] ?></h1>
 
 <h1><a href="logout.php">Logout</a></h1>
