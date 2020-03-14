@@ -177,10 +177,29 @@ else
         default:
           require_once 'home.php';
           break;
+     }
     }
     else
     {
-      
+      switch($navigation){
+        case 'product':
+          require_once 'product.php';
+          break;
+        case 'categories':
+          require_once 'categories.php';
+          break;
+        case 'create':
+          require_once 'form_create.php';
+          break;
+        case 'details':
+          require_once 'product-details.php';
+          break;
+        case 'update':
+          require_once 'form_update.php';
+          break;
+        default:
+          require_once 'home.php';
+          break;
       }
     }
     ?>
