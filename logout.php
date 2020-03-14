@@ -1,5 +1,5 @@
 <?php
-
+//credits: majaaaaaaa john paul majaaaaaaaaa
 
 include('config.php');
 
