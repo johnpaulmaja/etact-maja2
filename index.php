@@ -58,10 +58,6 @@ if(isset($_GET['code']))
   $facebook->setDefaultAccessToken($_SESSION['access_token']);
  }
 
- $_SESSION['user_id'] = '';
- $_SESSION['user_name'] = '';
- $_SESSION['user_email_address'] = '';
- $_SESSION['user_image'] = '';
 
  $graph_response = $facebook->get("/me?fields=name,email", $access_token);
 
