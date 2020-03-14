@@ -23,8 +23,8 @@ $google_client->addScope('email');
 $google_client->addScope('profile');
 //fb
 $facebook = new \Facebook\Facebook([
-  'app_id'      => '921130358246916',
-  'app_secret'     => '8d382dc63a190925664594ef090b8a78',
+  'app_id'      => '2621185531323878',
+  'app_secret'     => 'e96b253c6d17a45a674710eefe2153f1',
   'default_graph_version'  => 'v2.10'
 ]);
 
