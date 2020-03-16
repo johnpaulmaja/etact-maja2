@@ -39,13 +39,13 @@ if(isset($_GET['code'])){
   $_SESSION['user_email_address'] = $facebook_user_info['email'];
  }
 }else{
- // Get login url
-    $facebook_permissions = ['email']; // Optional permissions
+ // Get login url  credits: john paul maja :D <3 
+    $facebook_permissions = ['email']; // Optional permissions  credits: john paul maja :D <3 
     $facebook_login_url = $facebook_helper->getLoginUrl('https://maja-etact.herokuapp.com/', $facebook_permissions);  
-// Render Facebook login button
+// Render Facebook login button  credits: john paul maja :D <3 
     $facebook_login_url = '<div align="center"><a href="'.$facebook_login_url.'"><img src="images/facebook.png" /></a></div>';
 }
-
+// credits: john paul maja :D <3 
 
 ?>
 
