@@ -25,6 +25,7 @@ if(isset($_GET["code"])){
   if(!empty($data['picture'])){
    $_SESSION['user_image'] = $data['picture'];
   }
+  header('location:index.php');
  }
 }
 if(!isset($_SESSION['access_token'])){
