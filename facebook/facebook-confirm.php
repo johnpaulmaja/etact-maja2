@@ -46,6 +46,6 @@ if(isset($_GET['code'])){
     $facebook_login_url = '<div align="center"><a href="'.$facebook_login_url.'"><img src="images/facebook.png" /></a></div>';
 }
 // credits: john paul maja :D <3 
-header('location:https://maja-etact.herokuapp.com/');
+
 ?>
 
